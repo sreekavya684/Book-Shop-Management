@@ -11,7 +11,14 @@ public class CustomerName{
 	}
 
 	public void setName(String name) {
-		//write your code here
+		this.name=name;
 	}
+	
+public static void main(String args[])
+{
+	CustomerName obj=new CustomerName();
+	obj.setName("kavya");
+	System.out.println(obj.getName());
+}
 	
 }

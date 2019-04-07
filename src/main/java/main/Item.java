@@ -4,8 +4,8 @@ public class Item{
     public int mrp;
     public  void addItem(String itemName,int mrpItem){
         //write your code here
-    	//-------------------
-
+       this.itemName=itemName;
+       this.mrp=mrpItem;
     }
 	public String getItemName() {
 		return itemName;
@@ -20,4 +20,15 @@ public class Item{
 		this.mrp = mrp;
 	}
     
+
+public static void main(String args[])
+{
+	Item it=new Item();
+	it.setItemName(" My experiment with truth");
+	it.setMrp(40);
+	System.out.println(it.getItemName());
+	System.out.println(it.getMrp());
+   
 }
+}
+
